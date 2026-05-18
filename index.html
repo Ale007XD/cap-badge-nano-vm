@@ -1,0 +1,398 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAP Badge — AI With a Visible Brain</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: #050816;
+      color: #e2e8f0;
+      overflow-x: hidden;
+      font-family: Inter, system-ui, sans-serif;
+    }.glass {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.glow {
+  box-shadow: 0 0 60px rgba(56,189,248,0.25);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.pulse-dot {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 0.3; transform: scale(0.95); }
+}
+
+.flow-line {
+  animation: flow 2s linear infinite;
+}
+
+@keyframes flow {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+.terminal {
+  font-family: monospace;
+}
+
+  </style>
+</head>
+<body class="grid-bg">  <section class="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10"></div><div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+
+  <div>
+    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6 text-cyan-300 text-sm">
+      <div class="w-2 h-2 rounded-full bg-cyan-400 pulse-dot"></div>
+      Observable AI Runtime Device
+    </div>
+
+    <h1 class="text-5xl lg:text-7xl font-black leading-tight mb-6">
+      AI with a
+      <span class="text-cyan-400">visible brain.</span>
+    </h1>
+
+    <p class="text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl">
+      CAP Badge is the first wearable AI runtime that lets you actually SEE what AI is doing.
+      Not another AI assistant. Not another black box.
+      A programmable, observable, deterministic AI device for makers, hackers, and the open AI era.
+    </p>
+
+    <div class="flex flex-wrap gap-4 mb-10">
+      <button class="px-7 py-4 rounded-2xl bg-cyan-400 text-black font-bold hover:scale-105 transition glow">
+        Join Kickstarter Waitlist
+      </button>
+      <button class="px-7 py-4 rounded-2xl glass border border-white/10 hover:bg-white/5 transition">
+        View Runtime Demo
+      </button>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+      <div class="glass rounded-2xl p-4">
+        <div class="text-cyan-400 text-2xl font-bold">ESP32-S3</div>
+        <div class="text-slate-400 mt-1">Realtime MCU</div>
+      </div>
+      <div class="glass rounded-2xl p-4">
+        <div class="text-cyan-400 text-2xl font-bold">Open</div>
+        <div class="text-slate-400 mt-1">Firmware + SDK</div>
+      </div>
+      <div class="glass rounded-2xl p-4">
+        <div class="text-cyan-400 text-2xl font-bold">FSM</div>
+        <div class="text-slate-400 mt-1">Visible Runtime</div>
+      </div>
+      <div class="glass rounded-2xl p-4">
+        <div class="text-cyan-400 text-2xl font-bold">$119</div>
+        <div class="text-slate-400 mt-1">Target Early Bird</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative flex justify-center">
+    <div class="absolute w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl"></div>
+
+    <div class="relative w-[360px] h-[640px] rounded-[40px] glass border border-cyan-400/20 glow overflow-hidden p-5">
+      <div class="flex justify-between items-center mb-4 text-xs text-slate-400">
+        <span>CAP Badge Runtime</span>
+        <span>LIVE</span>
+      </div>
+
+      <div class="rounded-3xl bg-black/60 border border-cyan-400/20 p-5 h-full flex flex-col">
+
+        <div class="flex items-center justify-between mb-6">
+          <div>
+            <div class="text-xs text-slate-500">STATE</div>
+            <div class="text-2xl font-bold text-cyan-400">LISTENING</div>
+          </div>
+          <div class="w-4 h-4 rounded-full bg-cyan-400 pulse-dot"></div>
+        </div>
+
+        <div class="space-y-4 flex-1 terminal text-sm">
+
+          <div class="glass rounded-xl p-3 border border-cyan-400/10">
+            <div class="text-slate-500 mb-1">EVENT</div>
+            <div class="text-cyan-300">wakeword.detected</div>
+          </div>
+
+          <div class="text-center text-cyan-500 flow-line">↓</div>
+
+          <div class="glass rounded-xl p-3 border border-cyan-400/10">
+            <div class="text-slate-500 mb-1">ACTION</div>
+            <div class="text-green-300">record_audio()</div>
+          </div>
+
+          <div class="text-center text-cyan-500 flow-line">↓</div>
+
+          <div class="glass rounded-xl p-3 border border-cyan-400/10">
+            <div class="text-slate-500 mb-1">STATE</div>
+            <div class="text-purple-300">streaming</div>
+          </div>
+
+          <div class="text-center text-cyan-500 flow-line">↓</div>
+
+          <div class="glass rounded-xl p-3 border border-cyan-400/10">
+            <div class="text-slate-500 mb-1">INTENT</div>
+            <div class="text-yellow-300">focus_mode</div>
+          </div>
+
+          <div class="text-center text-cyan-500 flow-line">↓</div>
+
+          <div class="glass rounded-xl p-3 border border-cyan-400/10">
+            <div class="text-slate-500 mb-1">ACTION</div>
+            <div class="text-pink-300">vibrate.soft()</div>
+          </div>
+        </div>
+
+        <div class="mt-6 grid grid-cols-3 gap-3 text-xs">
+          <div class="glass rounded-xl p-3 text-center">
+            <div class="text-slate-500">Latency</div>
+            <div class="text-cyan-300 font-bold">42ms</div>
+          </div>
+          <div class="glass rounded-xl p-3 text-center">
+            <div class="text-slate-500">Heap</div>
+            <div class="text-cyan-300 font-bold">12%</div>
+          </div>
+          <div class="glass rounded-xl p-3 text-center">
+            <div class="text-slate-500">Battery</div>
+            <div class="text-cyan-300 font-bold">18h</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </section>  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto"><div class="text-center mb-16">
+    <div class="text-cyan-400 uppercase tracking-[0.3em] text-sm mb-4">The Problem</div>
+    <h2 class="text-4xl md:text-6xl font-black mb-6">AI became invisible.</h2>
+    <p class="text-slate-400 text-xl max-w-3xl mx-auto">
+      Modern AI devices hide execution behind black-box magic. CAP Badge makes every event, state, and action visible in real time.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <div class="glass rounded-3xl p-8 border border-red-400/10">
+      <div class="text-red-400 text-sm uppercase tracking-widest mb-4">Typical AI Device</div>
+      <div class="terminal bg-black/50 rounded-2xl p-6 text-slate-300 min-h-[280px]">
+        <div>You speak</div>
+        <div class="my-4 text-center text-red-400">↓</div>
+        <div class="text-center text-red-300 text-2xl py-12">??? MAGIC ???</div>
+        <div class="my-4 text-center text-red-400">↓</div>
+        <div>Response appears</div>
+      </div>
+
+      <div class="mt-6 space-y-3 text-slate-400">
+        <div>✕ Hidden execution</div>
+        <div>✕ No observable state</div>
+        <div>✕ Unclear AI behavior</div>
+        <div>✕ Black-box decisions</div>
+      </div>
+    </div>
+
+    <div class="glass rounded-3xl p-8 border border-cyan-400/20 glow">
+      <div class="text-cyan-400 text-sm uppercase tracking-widest mb-4">CAP Badge</div>
+      <div class="terminal bg-black/50 rounded-2xl p-6 text-slate-300 min-h-[280px]">
+        <div>Speech Input</div>
+        <div class="my-2 text-center text-cyan-400">↓</div>
+        <div>[Wakeword Detected]</div>
+        <div class="my-2 text-center text-cyan-400">↓</div>
+        <div>[Recording Started]</div>
+        <div class="my-2 text-center text-cyan-400">↓</div>
+        <div>[Streaming Audio]</div>
+        <div class="my-2 text-center text-cyan-400">↓</div>
+        <div>[Intent Recognized]</div>
+        <div class="my-2 text-center text-cyan-400">↓</div>
+        <div>[Action Executed]</div>
+      </div>
+
+      <div class="mt-6 space-y-3 text-slate-300">
+        <div>✓ Visible runtime states</div>
+        <div>✓ Deterministic event flow</div>
+        <div>✓ Observable AI execution</div>
+        <div>✓ Programmable runtime logic</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </section>  <section class="py-24 px-6 bg-gradient-to-b from-transparent to-cyan-500/5">
+    <div class="max-w-7xl mx-auto"><div class="text-center mb-16">
+    <div class="text-cyan-400 uppercase tracking-[0.3em] text-sm mb-4">Runtime Visualization</div>
+    <h2 class="text-4xl md:text-6xl font-black mb-6">Watch AI execution happen.</h2>
+  </div>
+
+  <div class="grid lg:grid-cols-3 gap-8">
+
+    <div class="glass rounded-3xl p-8">
+      <div class="text-cyan-400 text-sm uppercase mb-4">Timeline Mode</div>
+      <div class="terminal space-y-3 text-sm">
+        <div class="glass p-3 rounded-xl">EVENT(button_press)</div>
+        <div class="text-center text-cyan-400">↓</div>
+        <div class="glass p-3 rounded-xl">STATE(recording)</div>
+        <div class="text-center text-cyan-400">↓</div>
+        <div class="glass p-3 rounded-xl">ACTION(stream_audio)</div>
+        <div class="text-center text-cyan-400">↓</div>
+        <div class="glass p-3 rounded-xl">STATE(waiting_response)</div>
+      </div>
+    </div>
+
+    <div class="glass rounded-3xl p-8">
+      <div class="text-cyan-400 text-sm uppercase mb-4">FSM Graph</div>
+
+      <div class="relative h-[260px] flex items-center justify-center">
+        <div class="absolute top-8 left-1/2 -translate-x-1/2 glass rounded-full px-6 py-3 border border-cyan-400/20">Idle</div>
+        <div class="absolute top-28 left-12 glass rounded-full px-6 py-3 border border-cyan-400/20">Listening</div>
+        <div class="absolute top-28 right-12 glass rounded-full px-6 py-3 border border-cyan-400/20">Streaming</div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 glass rounded-full px-6 py-3 border border-cyan-400/20 bg-cyan-400/10">Focus Mode</div>
+
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 260">
+          <line x1="200" y1="50" x2="110" y2="130" stroke="#22d3ee" stroke-width="2" opacity="0.5"/>
+          <line x1="200" y1="50" x2="290" y2="130" stroke="#22d3ee" stroke-width="2" opacity="0.5"/>
+          <line x1="110" y1="150" x2="200" y2="220" stroke="#22d3ee" stroke-width="2" opacity="0.5"/>
+          <line x1="290" y1="150" x2="200" y2="220" stroke="#22d3ee" stroke-width="2" opacity="0.5"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="glass rounded-3xl p-8">
+      <div class="text-cyan-400 text-sm uppercase mb-4">Live Metrics</div>
+
+      <div class="space-y-6">
+        <div>
+          <div class="flex justify-between mb-2 text-sm">
+            <span>Latency</span>
+            <span>42ms</span>
+          </div>
+          <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+            <div class="h-full w-[28%] bg-cyan-400 rounded-full"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-2 text-sm">
+            <span>Heap Usage</span>
+            <span>12%</span>
+          </div>
+          <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+            <div class="h-full w-[12%] bg-green-400 rounded-full"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-2 text-sm">
+            <span>Battery</span>
+            <span>18h</span>
+          </div>
+          <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+            <div class="h-full w-[82%] bg-purple-400 rounded-full"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-2 text-sm">
+            <span>Trace Stability</span>
+            <span>99.2%</span>
+          </div>
+          <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+            <div class="h-full w-[92%] bg-yellow-400 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </section>  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto"><div class="text-center mb-16">
+    <div class="text-cyan-400 uppercase tracking-[0.3em] text-sm mb-4">Hardware</div>
+    <h2 class="text-4xl md:text-6xl font-black mb-6">Built for makers.</h2>
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <div class="glass rounded-3xl p-6 hover:-translate-y-1 transition">
+      <div class="text-cyan-400 text-xl font-bold mb-3">ESP32-S3</div>
+      <p class="text-slate-400 text-sm leading-relaxed">
+        BLE + Wi-Fi + USB-C with strong open-source ecosystem and wearable-ready performance.
+      </p>
+    </div>
+
+    <div class="glass rounded-3xl p-6 hover:-translate-y-1 transition">
+      <div class="text-cyan-400 text-xl font-bold mb-3">1.54” IPS</div>
+      <p class="text-slate-400 text-sm leading-relaxed">
+        Runtime timelines, FSM graphs, traces, and event visualization in realtime.
+      </p>
+    </div>
+
+    <div class="glass rounded-3xl p-6 hover:-translate-y-1 transition">
+      <div class="text-cyan-400 text-xl font-bold mb-3">18h Battery</div>
+      <p class="text-slate-400 text-sm leading-relaxed">
+        Low-power deterministic runtime architecture optimized for portable workflows.
+      </p>
+    </div>
+
+    <div class="glass rounded-3xl p-6 hover:-translate-y-1 transition">
+      <div class="text-cyan-400 text-xl font-bold mb-3">Open SDK</div>
+      <p class="text-slate-400 text-sm leading-relaxed">
+        Open firmware, runtime APIs, CAP protocol, and community extensions.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+  </section>  <section class="py-24 px-6 bg-gradient-to-r from-cyan-500/10 to-purple-500/10">
+    <div class="max-w-5xl mx-auto text-center"><div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6 text-cyan-300 text-sm">
+    <div class="w-2 h-2 rounded-full bg-cyan-400 pulse-dot"></div>
+    Kickstarter Launch 2026
+  </div>
+
+  <h2 class="text-5xl md:text-7xl font-black mb-8 leading-tight">
+    The future of AI is not invisible magic.
+  </h2>
+
+  <div class="text-3xl md:text-5xl font-black text-cyan-400 mb-10">
+    It’s visible execution.
+  </div>
+
+  <p class="text-slate-300 text-xl max-w-3xl mx-auto leading-relaxed mb-12">
+    CAP Badge is the first step toward a new category:
+    open, observable, deterministic AI devices for the maker generation.
+  </p>
+
+  <div class="flex flex-wrap justify-center gap-4">
+    <button class="px-8 py-5 rounded-2xl bg-cyan-400 text-black font-black text-lg glow hover:scale-105 transition">
+      Join Early Access
+    </button>
+
+    <button class="px-8 py-5 rounded-2xl glass border border-white/10 text-lg hover:bg-white/5 transition">
+      View GitHub Roadmap
+    </button>
+  </div>
+
+  <div class="mt-16 text-slate-500 text-sm">
+    CAP Runtime • nano-vm • Observable AI • Open Hardware • Deterministic Execution
+  </div>
+</div>
+
+  </section></body>
+</html>
